@@ -1,0 +1,138 @@
+section {
+    margin-bottom: 160px !important;
+    background: #f5f8fb;
+
+    .accordian {
+        background: #f5f8fb;
+        &--heading {
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 124%;
+            color: #2e363e;
+
+            span {
+                color: #057ef6;
+            }
+        }
+
+        &__btns {
+            button {
+                background: #ffffff;
+                border: 1px solid #f5f8fb;
+            }
+
+            button:hover {
+                opacity: 0.8;
+                border: 1px solid #057ef6;
+            }
+        }
+    }
+
+    .accordion {
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+            transform: scale(0.6) !important;
+        }
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+        .wrapper {
+            background: #057ef6;
+            h2 button {
+                background: #057ef6;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 140%;
+            }
+
+            div.card-body {
+                padding: 6px 24px !important;
+
+                h5 {
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 140%;
+                    color: #2e363e;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: #6a727a;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 100px !important;
+
+        .accordian {
+            &--heading {
+                font-size: 34px !important;
+            }
+        }
+        .accordian__btns {
+            flex-wrap: wrap;
+
+            div {
+                margin-top: 10px !important;
+                display: flex;
+            }
+        }
+
+        .wrapper {
+            h2 button {
+                font-size: 20px !important;
+            }
+
+            div.card-body {
+                h5 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    section {
+        margin-bottom: 60px !important;
+
+        .accordian__btns {
+            div {
+                flex-wrap: wrap;
+                margin-top: 10px !important;
+                display: flex;
+                justify-content: center !important;
+                margin: 0 !important;
+
+                button {
+                    margin-bottom: 10px !important;
+                }
+            }
+        }
+
+        .wrapper {
+            h2 button {
+                font-size: 16px !important;
+            }
+
+            div.card-body {
+                h5 {
+                    font-size: 16px !important;
+                }
+
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+section {
+    padding: 160px 0 !important;
+
+    .blue {
+        background: #057ef6;
+    }
+    .green {
+        background: #42bf44;
+    }
+    .purple {
+        background: #9d50ff;
+    }
+    .orange {
+        background: #ff7e00;
+    }
+    .yellow {
+        background: #f4be1b;
+    }
+
+    .main__card {
+        padding: 60px !important;
+        border-radius: 34px;
+
+        background-image: url("@/assets/Icons/Laptop.svg"),
+            url("@/assets/Icons/List.svg"), url("@/assets/Icons/Folder.svg");
+        background-position: center center, right top, right bottom;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+
+        &--heading {
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 124%;
+            color: #ffffff;
+        }
+
+        &--text {
+            max-width: 790px;
+            width: 100%;
+            font-size: 20px;
+            line-height: 140%;
+            color: #ffffff;
+        }
+
+        .btn-main.link {
+            padding: 24px 40px !important;
+            cursor: pointer;
+        }
+
+        .btn-main {
+            font-weight: 500;
+            width: 48%;
+
+            select {
+                padding: 24px 40px !important;
+                cursor: pointer;
+            }
+        }
+
+        .btn-main:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 100px 0 !important;
+
+        .main__card {
+            padding: 40px !important;
+            border-radius: 34px;
+
+            &--heading {
+                font-size: 44px;
+            }
+
+            &--text {
+                font-size: 18px;
+            }
+
+            .btns {
+                flex-direction: column;
+                align-items: center;
+
+                .btn-main {
+                    margin-bottom: 15px !important;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 80px 0 !important;
+
+        .main__card {
+            padding: 20px !important;
+
+            &--heading {
+                font-size: 36px;
+            }
+
+            &--text {
+                font-size: 16px;
+            }
+        }
+    }
+}

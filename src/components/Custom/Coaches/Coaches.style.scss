@@ -1,0 +1,105 @@
+section {
+    padding-top: 160px !important;
+
+    .coaches {
+        &__info {
+            &--heading {
+                font-weight: 500;
+                font-size: 54px;
+                line-height: 124%;
+                text-align: center;
+                color: #2e363e;
+
+                span {
+                    color: #057ef6;
+                }
+            }
+
+            &--desc {
+                font-size: 20px;
+                line-height: 140%;
+                text-align: center;
+                color: #6a727a;
+            }
+
+            .leaders,
+            .mentors {
+                background: #ffffff;
+                border: 1px solid #f5f8fb;
+            }
+            .leaders:hover,
+            .mentors:hover {
+                border: 1px solid #057ef6;
+            }
+        }
+
+        &__list {
+            li {
+                width: 288px;
+
+                img {
+                    width: 100%;
+                }
+
+                h4 {
+                    font-size: 26px;
+                    line-height: 140%;
+                    color: #2e363e;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: #6a727a;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        .coaches {
+            &__list {
+                flex-wrap: wrap;
+                justify-content: space-evenly !important;
+
+                li {
+                    margin-bottom: 20px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding-top: 60px !important;
+
+        .coaches {
+            &__info {
+                &--heading {
+                    font-size: 36px;
+                }
+
+                &--desc {
+                    font-size: 16px;
+                }
+            }
+
+            &__list {
+                li {
+                    width: 200px;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

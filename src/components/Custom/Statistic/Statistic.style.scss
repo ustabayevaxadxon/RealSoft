@@ -1,0 +1,127 @@
+section {
+    padding: 80px 0 !important;
+    background: #f5f8fb;
+
+    .s-wrapper {
+        background: #f5f8fb;
+        &__info {
+            h2 {
+                width: 48%;
+                font-weight: 500;
+                font-size: 54px;
+                line-height: 124%;
+                color: #2e363e;
+            }
+
+            p {
+                width: 48%;
+                font-size: 20px;
+                line-height: 140%;
+                color: #6a727a;
+            }
+        }
+
+        &__list {
+            padding-top: 80px !important;
+        }
+
+        &__item {
+            padding: 5px !important;
+            width: 288px;
+
+            &--heading {
+                font-weight: 500;
+                font-size: 58px;
+                line-height: 124%;
+                color: #057ef6;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 140%;
+                color: #2e363e;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .s-wrapper {
+        flex-direction: column !important;
+
+        &__info {
+            &--heading {
+                font-size: 44px !important;
+            }
+
+            &--text {
+                font-size: 18px !important;
+            }
+        }
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: space-evenly !important;
+        }
+
+        &__item {
+            width: 45% !important;
+        }
+    }
+}
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0 !important;
+        .s-wrapper {
+            &__info {
+                align-items: center;
+
+                // padding-bottom: 40px !important;
+                &--heading {
+                    font-size: 34px !important;
+                }
+
+                &--text {
+                    font-size: 16px !important;
+                }
+            }
+            &__list {
+                padding-top: 30px !important;
+            }
+
+            &__item {
+                width: 80% !important;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .s-wrapper {
+        &__info {
+            flex-direction: column;
+
+            &--heading {
+                margin-bottom: 15px !important;
+                width: 100% !important;
+                font-size: 34px !important;
+            }
+
+            &--text {
+                width: 100% !important;
+                font-size: 12px !important;
+            }
+        }
+
+        &__item {
+            width: 100% !important;
+
+            &--heading {
+                font-size: 44px !important;
+            }
+
+            p {
+                font-size: 12px !important;
+            }
+        }
+    }
+}

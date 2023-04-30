@@ -1,0 +1,105 @@
+nav {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin-right: 7px !important;
+            }
+
+            div {
+                font-size: 12px;
+                line-height: 140%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #2e363e;
+            }
+        }
+
+        &__panel,
+        &__contact {
+            display: flex;
+
+            li {
+                font-size: 16px;
+                line-height: 120%;
+                color: #6a727a;
+
+                a {
+                    color: #2e363e;
+                }
+
+                .apply {
+                    padding: 10px 12px !important;
+                    color: #fff;
+                    font-weight: 500;
+                    background: #057ef6;
+                }
+
+                .apply:hover {
+                    background-color: #057ef6;
+                    opacity: 0.5 !important;
+                }
+
+                .login {
+                    padding: 10px 12px !important;
+                    color: #057ef6;
+                    font-weight: 500;
+                    background: #f5f8fb;
+                }
+
+                .login:hover {
+                    background-color: #f5f8fb;
+                    opacity: 0.5 !important;
+                }
+            }
+
+            :nth-child(2) {
+                margin-inline: 15px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    // .hamburger ul {
+    //     justify-content: center !important;
+    //     margin-left: 0 !important;
+    // }
+    .hamburger ul {
+        justify-content: center;
+        li {
+            display: flex !important;
+            justify-content: center !important;
+            margin-bottom: 10px !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header__logo {
+        div {
+            font-size: 10px !important;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .header__logo {
+        img {
+            width: 87px;
+            height: 45px;
+        }
+    }
+
+    .hamburger ul {
+        flex-direction: column;
+    }
+}

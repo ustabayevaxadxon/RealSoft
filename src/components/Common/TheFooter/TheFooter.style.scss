@@ -1,0 +1,86 @@
+section {
+    background: #2e363e !important;
+    padding: 98px 0 68px !important;
+
+    .footer {
+        background: #2e363e !important;
+
+        &__info {
+            width: 225px;
+            li a:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &__company {
+            width: 165px;
+            li a:hover {
+                opacity: 0.5;
+            }
+            h3 {
+                font-size: 26px !important;
+            }
+        }
+
+        &__course {
+            width: 244px;
+            li a:hover {
+                opacity: 0.5;
+            }
+            h3 {
+                font-size: 26px !important;
+            }
+        }
+
+        &__contact {
+            width: 203px;
+            h3 {
+                font-size: 26px !important;
+            }
+        }
+
+        &__l,
+        &__r {
+            width: 48%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 0 30px !important;
+
+        .footer {
+            flex-wrap: wrap !important;
+
+            &__info {
+                margin-bottom: 30px !important;
+            }
+
+            &__company,
+            &__course,
+            &__contact {
+                margin-bottom: 30px !important;
+
+                h3 {
+                    font-size: 26px !important;
+                }
+                li a {
+                    font-size: 14px !important;
+                }
+            }
+
+            &__l,
+            &__r {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .footer {
+        flex-direction: column;
+        align-items: center !important;
+    }
+}
