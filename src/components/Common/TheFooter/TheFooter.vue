@@ -60,7 +60,7 @@
                         <li>
                             <a
                                 class="text-white"
-                                :href="`tel:${contact.phoneNumber}`"
+                                :href="`tel:+${contact.phoneNumber}`"
                                 >{{ contact.phoneNumber }}</a
                             >
                             <p class="mt-3">{{ contact.address }}</p>

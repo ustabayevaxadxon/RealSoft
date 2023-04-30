@@ -54,7 +54,7 @@
                     </ul>
                     <ul class="header__contact align-items-center">
                         <li>
-                            <a href="tel:998712058484">(71) 205 84 84</a>
+                            <a href="tel:+998712058484">(71) 205 84 84</a>
                         </li>
                         <li>
                             <button class="apply border-0 rounded-pill">
