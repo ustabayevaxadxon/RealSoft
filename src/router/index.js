@@ -23,10 +23,6 @@ const routes = [
         component: () => import("../views/Android.vue"),
     },
     {
-        path: "/auth",
-        component: () => import("../views/Auth/Auth.vue"),
-    },
-    {
         path: "/:catchAll(.*)",
         component: () => import("../views/NotFound.vue"),
     },
