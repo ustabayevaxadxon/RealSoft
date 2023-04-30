@@ -3,12 +3,14 @@
         <nav id="header" class="navbar px-2 navbar-expand-lg navbar-light">
             <div class="container-fluid py-2">
                 <div class="header__logo">
-                    <img
-                        src="@/assets/Icons/Logo.svg"
-                        alt="Logo"
-                        width="124"
-                        height="65"
-                    />
+                    <router-link to="/">
+                        <img
+                            src="@/assets/Icons/Logo.svg"
+                            alt="Logo"
+                            width="124"
+                            height="65"
+                        />
+                    </router-link>
                     <div>
                         <p class="text-center">Академия для подготовки</p>
                         <p class="text-center">ведущих IT-специалистов</p>
@@ -40,13 +42,19 @@
                         </li>
                     </ul>
                     <ul class="header__panel">
-                        <li>Курсы</li>
-                        <li>Обучение</li>
-                        <li>Условия</li>
+                        <li>
+                            <router-link to="/">Курсы</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/">Обучение</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/">Условия</router-link>
+                        </li>
                     </ul>
                     <ul class="header__contact align-items-center">
                         <li>
-                            <a href="#">(71) 205 84 84</a>
+                            <a href="tel:998712058484">(71) 205 84 84</a>
                         </li>
                         <li>
                             <button class="apply border-0 rounded-pill">
@@ -64,6 +72,16 @@
         </nav>
     </base-card>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            courses: [],
+        };
+    },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "./TheHeader.style.scss";

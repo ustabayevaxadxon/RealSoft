@@ -25,7 +25,9 @@
                     <div
                         class="d-flex justify-content-end align-items-center btns"
                     >
-                        <a href="#">Подробно о курсе</a>
+                        <router-link :to="`/${crs.link}#header`"
+                            >Подробно о курсе</router-link
+                        >
                         <base-button class="ms-4" mode="flat">
                             Записаться на курс
                         </base-button>
@@ -42,6 +44,7 @@
                             :title="course.title"
                             :description="course.description"
                             :img="course.img"
+                            :link="course.link"
                         ></course-item>
                     </div>
                 </transition>
@@ -74,24 +77,28 @@ export default {
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Android.svg",
+                    link: "android",
                 },
                 {
                     title: "Android и IOS разработчик",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Android.svg",
+                    link: "android",
                 },
                 {
                     title: "Flutter разработчик",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Flutter.svg",
+                    link: "flutter",
                 },
                 {
                     title: "Java / Java Script разработчик",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "JS.svg",
+                    link: "java",
                 },
             ],
             courses: [
@@ -100,36 +107,42 @@ export default {
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Figma.svg",
+                    link: "graphics",
                 },
                 {
                     title: "Графический дизайн",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Ps.svg",
+                    link: "",
                 },
                 {
                     title: "Motion дизайн",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Motion.svg",
+                    link: "",
                 },
                 {
                     title: "Тестирование ПО (QA)",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "QA.svg",
+                    link: "",
                 },
                 {
                     title: "IT - English",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "Book-IT.svg",
+                    link: "",
                 },
                 {
                     title: "Project management",
                     description:
                         "Short text describing a feature of your product/service. Think how it can benefit your potential customer.",
                     img: "HR.svg",
+                    link: "",
                 },
             ],
         };

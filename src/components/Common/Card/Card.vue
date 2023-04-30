@@ -28,7 +28,7 @@
                             </select>
                         </div>
                         <router-link
-                            :to="`/${selectedCourse.toLowerCase()}`"
+                            :to="`/${selectedCourse.toLowerCase()}#header`"
                             class="bg-white text-dark btn-main link btn-primary border-0 rounded-pill"
                         >
                             Пройти тестирование

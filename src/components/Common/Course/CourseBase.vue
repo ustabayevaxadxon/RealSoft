@@ -22,7 +22,7 @@
                             >Записаться на курс</base-button
                         >
                         <router-link
-                            :to="link"
+                            to="details"
                             class="text-decoration-underline d-flex justify-content-start align-items-center"
                             >Программа курса
                         </router-link>

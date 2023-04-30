@@ -23,6 +23,10 @@ nav {
             }
         }
 
+        &__panel li a:hover {
+            opacity: 0.5;
+        }
+
         &__panel,
         &__contact {
             display: flex;

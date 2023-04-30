@@ -10,7 +10,8 @@
             {{ description }}
         </p>
         <div class="d-flex justify-content-end align-items-center btns">
-            <a href="#">Подробно о курсе</a>
+            <router-link :to="`/${link}#header`">Подробно о курсе</router-link>
+
             <base-button class="ms-4" mode="flat">
                 Записаться на курс
             </base-button>
@@ -20,7 +21,7 @@
 
 <script>
 export default {
-    props: ["title", "description", "img"],
+    props: ["title", "description", "img", "link"],
 };
 </script>
 <style lang="scss" scoped>

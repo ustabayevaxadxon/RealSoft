@@ -58,9 +58,11 @@
                     <ul class="footer__contact text-white">
                         <h3 class="mb-4">Контакты</h3>
                         <li>
-                            <a class="text-white" href="">{{
-                                contact.phoneNumber
-                            }}</a>
+                            <a
+                                class="text-white"
+                                :href="`tel:${contact.phoneNumber}`"
+                                >{{ contact.phoneNumber }}</a
+                            >
                             <p class="mt-3">{{ contact.address }}</p>
                         </li>
                     </ul>
