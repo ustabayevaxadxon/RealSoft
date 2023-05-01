@@ -46,14 +46,25 @@ section {
 
         .gallery__info {
             h4 {
-                margin-bottom: 8px !important;
-                font-size: 28px;
+                margin-bottom: 30px !important;
+                font-size: 34px;
             }
             p {
-                margin-bottom: 8px !important;
-
+                margin-bottom: 40px !important;
                 font-size: 12px;
             }
+        }
+
+        .gallery__l {
+            width: 100% !important;
+
+            // &__list {
+            //     align-items: normal !important;
+            // }
+        }
+
+        .gallery__r {
+            display: none;
         }
     }
 }

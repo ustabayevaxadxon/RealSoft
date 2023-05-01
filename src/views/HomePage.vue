@@ -1,16 +1,16 @@
 <template>
-    <the-header></the-header>
-    <the-hero></the-hero>
-    <category></category>
-    <coaches></coaches>
-    <timeline></timeline>
+    <!-- <the-header></the-header> -->
+    <!-- <the-hero></the-hero> -->
+    <!-- <category></category> -->
+    <!-- <coaches></coaches> -->
+    <!-- <timeline></timeline> -->
     <gallery></gallery>
-    <card mode="blue"></card>
-    <courses></courses>
-    <statistic></statistic>
+    <!-- <card mode="blue"></card> -->
+    <!-- <courses></courses> -->
+    <!-- <statistic></statistic>
     <carousel></carousel>
-    <accordian></accordian>
-    <the-footer></the-footer>
+    <accordian></accordian> -->
+    <!-- <the-footer></the-footer> -->
 </template>
 
 <script>

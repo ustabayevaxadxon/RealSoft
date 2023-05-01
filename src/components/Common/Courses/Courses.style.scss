@@ -1,6 +1,5 @@
 .courses {
     h1 {
-        text-align: center;
         font-weight: 500;
         font-size: 54px;
         line-height: 124%;
@@ -73,8 +72,28 @@
 @media (max-width: 576px) {
     .courses {
         h1 {
-            font-size: 36px;
+            font-size: 34px;
             margin: 60px 0 30px !important;
+        }
+    }
+}
+
+@media (max-width: 485px) {
+    .courses {
+        ul {
+            li,
+            .t-item {
+                width: 100%;
+                .btns {
+                    justify-content: center !important;
+                    align-items: center !important;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    div {
+                        margin: 10px 0 !important;
+                    }
+                }
+            }
         }
     }
 }

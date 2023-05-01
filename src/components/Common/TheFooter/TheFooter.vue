@@ -65,6 +65,50 @@
                             >
                             <p class="mt-3">{{ contact.address }}</p>
                         </li>
+                        <ul
+                            class="mt-4 d-flex justify-content-between text-white"
+                        >
+                            <li>
+                                <router-link to="/" class="text-white">
+                                    <img
+                                        src="@/assets/Icons/Youtube.svg"
+                                        alt=""
+                                        width="30"
+                                        height="30"
+                                    />
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/" class="text-white">
+                                    <img
+                                        src="@/assets/Icons/Facebook.svg"
+                                        alt=""
+                                        width="30"
+                                        height="30"
+                                    />
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/" class="text-white">
+                                    <img
+                                        src="@/assets/Icons/Telegram.svg"
+                                        alt=""
+                                        width="30"
+                                        height="30"
+                                    />
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/" class="text-white">
+                                    <img
+                                        src="@/assets/Icons/LinkedIn.svg"
+                                        alt=""
+                                        width="30"
+                                        height="30"
+                                    />
+                                </router-link>
+                            </li>
+                        </ul>
                     </ul>
                 </div>
             </div>

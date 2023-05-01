@@ -5,6 +5,38 @@
         max-width: 592px;
         width: 100%;
 
+        button {
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background-color: #3a0061;
+            border: 1px solid #3a0061;
+            color: white;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
+        button:hover,
+        button:active {
+            background-color: #270041;
+            border-color: #270041;
+        }
+
+        .flat {
+            padding: 10px 20px !important;
+            background: #057ef6;
+            border-radius: 200px;
+            color: #ffffff;
+            border: none;
+        }
+
+        .flat:hover,
+        .flat:active {
+            background-color: #057ef6;
+            opacity: 0.5;
+        }
+
         span {
             color: #057ef6;
             width: 100%;
@@ -41,19 +73,13 @@
 @media (max-width: 992px) {
     .hero {
         justify-content: center !important;
+        margin-top: 40px !important;
         flex-wrap: wrap;
         &__info {
             padding-top: 0 !important;
-            margin-bottom: 25px !important;
+            margin-bottom: 40px !important;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            &--heading,
-            &--text {
-                text-align: center;
-            }
         }
     }
 }
@@ -64,9 +90,32 @@
 
         &--heading {
             font-size: 40px;
+            margin-bottom: 20px !important;
         }
         &--text {
-            margin-bottom: 24px !important;
+            margin-bottom: 40px !important;
+            font-size: 16px;
+        }
+
+        .a button {
+            width: 100% !important;
+        }
+
+        .wrapper {
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .hero__info {
+        padding: 0 !important;
+
+        &--heading {
+            font-size: 40px;
+        }
+        &--text {
+            margin-bottom: 30px !important;
             font-size: 12px;
         }
     }

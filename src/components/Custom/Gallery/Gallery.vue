@@ -8,16 +8,15 @@
                     <div class="gallery__info text-white">
                         <h4 class="mb-4">Наша галлерея</h4>
                         <p class="mb-4">
-                            A short paragraph describing how you benefit your
-                            actual customers and how you value their time and
-                            loyalty.
+                            Наша цель - обучить 1 000 000 опытных специалистов.
+                            Охватывает все регионы нашей страны. Предоставление
+                            международно-признанных сертификатов. Достижение
+                            статуса самой требовательной IT-академии за рубежом.
                         </p>
                     </div>
-                    <ul
-                        class="gallery__l__list d-flex justify-content-between align-items-center"
-                    >
+                    <ul class="gallery__l__list d-flex justify-content-between">
                         <li
-                            class="d-flex flex-column justify-content-between me-1"
+                            class="d-flex flex-column justify-content-between me-2"
                         >
                             <div class="mb-1">
                                 <img

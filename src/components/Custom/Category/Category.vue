@@ -54,6 +54,23 @@
     </base-card>
 </template>
 
+<!-- <script>
+export default {
+    data() {
+        return {
+            data: [
+                {
+                    id: 1,
+                    title: "Опытные менторы",
+                    desc: "Short text describing a feature of your product service.",
+                    image: "",
+                },
+            ],
+        };
+    },
+};
+</script> -->
+
 <style lang="scss" scoped>
 @import "./Category.style.scss";
 </style>

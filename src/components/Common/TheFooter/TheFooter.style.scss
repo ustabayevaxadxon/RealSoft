@@ -54,13 +54,13 @@ section {
             flex-wrap: wrap !important;
 
             &__info {
-                margin-bottom: 30px !important;
+                margin-bottom: 60px !important;
             }
 
             &__company,
             &__course,
             &__contact {
-                margin-bottom: 30px !important;
+                margin-bottom: 60px !important;
 
                 h3 {
                     font-size: 26px !important;
@@ -79,8 +79,27 @@ section {
 }
 
 @media (max-width: 475px) {
-    .footer {
-        flex-direction: column;
-        align-items: center !important;
+    section {
+        .footer {
+            flex-direction: column;
+            align-items: flex-start !important;
+
+            &__company,
+            &__course,
+            &__contact {
+                margin-bottom: 40px !important;
+
+                h3 {
+                    font-size: 26px !important;
+                }
+                li a {
+                    font-size: 14px !important;
+                }
+            }
+
+            &__info {
+                margin-bottom: 40px !important;
+            }
+        }
     }
 }
