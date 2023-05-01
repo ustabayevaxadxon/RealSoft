@@ -76,7 +76,6 @@ section {
             &__info {
                 align-items: center;
 
-                // padding-bottom: 40px !important;
                 &--heading {
                     font-size: 34px !important;
                 }
@@ -90,7 +89,7 @@ section {
             }
 
             &__item {
-                width: 80% !important;
+                width: 100% !important;
             }
         }
     }
@@ -113,8 +112,6 @@ section {
         }
 
         &__item {
-            width: 100% !important;
-
             &--heading {
                 font-size: 44px !important;
             }

@@ -63,6 +63,7 @@
         }
 
         &__item {
+            width: 45% !important;
             margin-bottom: 20px !important;
         }
     }
@@ -77,6 +78,7 @@
 
         &__item {
             height: 250px;
+            width: 100% !important;
             margin-bottom: 20px !important;
 
             &--heading {
